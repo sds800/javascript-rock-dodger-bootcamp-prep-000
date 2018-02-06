@@ -86,23 +86,23 @@ GAME.appendChild(rock);
      if (checkCollision = true) {
         endGame()
      }
-     else {
-       move(rock)
-     }
+
     /**
      * Otherwise, if the rock hasn't reached the bottom of
      * the GAME, we want to move it again.
      */
-     if (top > 400)
-     rock.remove()
+     if (top > 400){
+       rock.remove()
+     }
+
     /**
      * But if the rock *has* reached the bottom of the GAME,
      * we should remove the rock from the DOM
      */
-  }
+
 
   // We should kick of the animation of the rock around here
-  function move(rock) {
+
     var top = 0
 
       rock.style.top = `${top += 2}px`
@@ -113,7 +113,7 @@ GAME.appendChild(rock);
 
 
     window.requestAnimationFrame(move)
-  }
+
   // Add the rock to ROCKS so that we can remove all rocks
   // when there's a collision
   ROCKS.push(rock)
