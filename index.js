@@ -38,9 +38,9 @@ function checkCollision() {
     const rockRightEdge = rockLeftEdge + 20;
 
     if (
-      rockLeftEdge < dodgerLeftEdge && rockRightEdge > dodgerLeftEdge
-      rockLeftEdge > dodgerRightEdge && rockRightEdge < dodgerRightEdge
-      rockLeftEdge < dodgerRightEdge && rockRightEdge > dodgerRightEdge
+      rockLeftEdge < dodgerLeftEdge && rockRightEdge > dodgerLeftEdge;
+      rockLeftEdge > dodgerRightEdge && rockRightEdge < dodgerRightEdge;
+      rockLeftEdge < dodgerRightEdge && rockRightEdge > dodgerRightEdge;
       // false /**
       //          * Think about it -- what's happening here?
       //          * There's been a collision if one of three things is true:
@@ -132,7 +132,7 @@ GAME.appendChild(rock);
  * Finally, alert "YOU LOSE!" to the player.
  */
 function endGame() {
-  
+
   alert("YOU LOSE";)
 }
 
