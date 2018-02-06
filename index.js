@@ -205,11 +205,11 @@ function moveDodgerRight() {
    var leftNumbers = dodger.style.left.replace('px', '')
    var left = parseInt(leftNumbers, 10)
 
-   if (left < 359) {
-    //  window.requestAnimationFrame(moveDodgerRight)
-     dodger.style.left = `${left + 4}px`
-   }
-  //  window.requestAnimationFrame(moveDodgerRight)
+     window.requestAnimationFrame(function(){
+       if (left < 359) {
+         dodger.style.left = `${left + 4}px`
+       }
+     })
  }
 
  // document.addEventListener('keydown', function(e) {
