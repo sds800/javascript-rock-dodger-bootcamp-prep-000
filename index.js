@@ -79,7 +79,7 @@ GAME.appendChild(rock);
    * seems like a good pace.)
    */
   function moveRock() {
-
+    var rock = document.querySelector("#rock")
   var top = 0
 
   function step() {
