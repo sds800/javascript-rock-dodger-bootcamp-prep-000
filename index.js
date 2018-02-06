@@ -112,7 +112,7 @@ GAME.appendChild(rock);
       if (top < 400) {
         window.requestAnimationFrame(move)
       }
-    
+
 
     window.requestAnimationFrame(move)
   }
@@ -162,6 +162,12 @@ function moveDodgerLeft() {
     dodger.style.left = `${left - 1}px`
   }
 }
+
+document.addEventListener('keydown', function(e) {
+  if (e.which === 37) {
+    moveDodgerLeft()
+  }
+})
 
 function moveDodgerRight() {
   // implement me!
