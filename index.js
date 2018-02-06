@@ -95,9 +95,10 @@ GAME.appendChild(rock);
      }
     //  * Otherwise, if the rock hasn't reached the bottom of
     //  * the GAME, we want to move it again.
-    if (top < 400) {
-    step()
-    }
+    if (top < 200) {
+     window.requestAnimationFrame(step)
+   }
+
      if (top > 400){
        GAME.removeChild(rock)
      }
@@ -106,9 +107,9 @@ GAME.appendChild(rock);
      * we should remove the rock from the DOM
      */
   // We should kick of the animation of the rock around here
-  
 
 
+      window.requestAnimationFrame(step)
 
 
   // Add the rock to ROCKS so that we can remove all rocks
