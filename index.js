@@ -147,7 +147,7 @@ function moveDodger(e) {
    */
    console.log(e.which)
 
-     if (e.key === LEFT_ARROW) {
+     if (e.which === LEFT_ARROW) {
        moveDodgerLeft()
      }
 
