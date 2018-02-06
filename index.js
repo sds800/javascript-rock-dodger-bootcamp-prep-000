@@ -88,7 +88,7 @@ function moveRock() {
     //  * we should call endGame()
     //  */
      if (checkCollision == true) {
-        endGame()
+      return endGame()
      }
     //  * Otherwise, if the rock hasn't reached the bottom of
     //  * the GAME, we want to move it again.
@@ -127,7 +127,7 @@ function moveRock() {
 function endGame() {
 
   clearInterval(gameInterval)
-  
+
 
 
 
