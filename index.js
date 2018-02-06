@@ -99,7 +99,7 @@ GAME.appendChild(rock);
     function step() {
   rock.style.top = `${top += 2}px`
 
-  if (top < 200) {
+  if (top < 400) {
     window.requestAnimationFrame(step)
   }
 }
