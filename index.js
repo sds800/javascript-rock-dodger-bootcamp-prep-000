@@ -133,7 +133,7 @@ function endGame() {
   ROCKS.forEach(function(rock){
     rock.remove()
 
-  }
+  })
   console.log(ROCKS)
   window.removeEventListener('keydown', moveDodger)
   alert("YOU LOSE!")
