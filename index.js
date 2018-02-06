@@ -127,7 +127,7 @@ function endGame() {
 
   clearInterval(gameInterval)
 
-  GAME.removeChild(rock)
+  GAME.removeChild(ROCKS)
 
   alert("YOU LOSE!")
 }
