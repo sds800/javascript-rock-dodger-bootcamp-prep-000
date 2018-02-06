@@ -76,22 +76,16 @@ GAME.appendChild(rock);
    * This function moves the rock. (2 pixels at a time
    * seems like a good pace.)
    */
-  function moveRock() {
-    // implement me!
-    // (use the comments below to guide you!)
-    /**
-     * If a rock collides with the DODGER,
-     * we should call endGame()
-     */
+  function moveRock(rock) {
+    //  * If a rock collides with the DODGER,
+    //  * we should call endGame()
+    //  */
      if (checkCollision = true) {
         endGame()
      }
-
-    /**
-     * Otherwise, if the rock hasn't reached the bottom of
-     * the GAME, we want to move it again.
-     */
-     if (top > 400){
+    //  * Otherwise, if the rock hasn't reached the bottom of
+    //  * the GAME, we want to move it again.
+     if (top >= 400){
        rock.remove()
      }
     /**
