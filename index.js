@@ -94,13 +94,10 @@ GAME.appendChild(rock);
      if (top > 400){
        rock.remove()
      }
-
     /**
      * But if the rock *has* reached the bottom of the GAME,
      * we should remove the rock from the DOM
      */
-
-
   // We should kick of the animation of the rock around here
 
     var top = 0
@@ -110,8 +107,6 @@ GAME.appendChild(rock);
       if (top < 400) {
         window.requestAnimationFrame(move)
       }
-
-
     window.requestAnimationFrame(move)
 
   // Add the rock to ROCKS so that we can remove all rocks
