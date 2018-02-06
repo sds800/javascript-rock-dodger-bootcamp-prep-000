@@ -87,7 +87,7 @@ function moveRock() {
     //  * If a rock collides with the DODGER,
     //  * we should call endGame()
     //  */
-     if (checkCollision(rock) == true) {
+     if (checkCollision(rock) /*== true*/) {
       return endGame()
      }
     //  * Otherwise, if the rock hasn't reached the bottom of
