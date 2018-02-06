@@ -131,7 +131,6 @@ function endGame() {
   console.log(ROCKS)
   ROCKS.length = 0
   console.log(ROCKS)
-  GAME.removeChild(rock)
   window.removeEventListener('keydown', moveDodger)
   alert("YOU LOSE!")
 }
