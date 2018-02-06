@@ -128,10 +128,7 @@ function moveRock() {
 function endGame() {
 
   clearInterval(gameInterval)
-
-  return ROCKS.length = 0
-
-
+  window.removeEventListener('keydown', moveDodger)
   alert("YOU LOSE!")
 }
 
