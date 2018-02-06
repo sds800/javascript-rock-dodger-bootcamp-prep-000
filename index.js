@@ -41,7 +41,10 @@ function checkCollision(rock) {
 
     if ((rockLeftEdge <= dodgerLeftEdge && rockRightEdge >= dodgerLeftEdge) ||
       (rockLeftEdge >= dodgerRightEdge && rockRightEdge <= dodgerRightEdge) ||
-      (rockLeftEdge <= dodgerRightEdge && rockRightEdge >= dodgerRightEdge))
+      (rockLeftEdge <= dodgerRightEdge && rockRightEdge >= dodgerRightEdge)){
+              // return true
+    }
+}
       // false /**
       //          * Think about it -- what's happening here?
       //          * There's been a collision if one of three things is true:
@@ -51,12 +54,9 @@ function checkCollision(rock) {
       //          *    and the rock's right edge is < the DODGER's right edge;
       //          * 3. The rock's left edge is < the DODGER's right edge,
       //          *    and the rock's right edge is > the DODGER's right edge
-              //  */)
-             {
-              // return true
-    }
+              //  */
 
-}
+
 
 function createRock(x) {
   const rock = document.createElement('div')
@@ -73,13 +73,13 @@ function createRock(x) {
    * Now that we have a rock, we'll need to append
    * it to GAME and move it downwards.
    */
-GAME.appendChild(rock);
+   GAME.appendChild(rock);
 
   /**
    * This function moves the rock. (2 pixels at a time
    * seems like a good pace.)
    */
-  function moveRock() {
+function moveRock() {
 
     rock.style.top = `${top += 2}px`
 
@@ -127,6 +127,7 @@ GAME.appendChild(rock);
 function endGame() {
 
   clearInterval(gameInterval)
+  
 
 
 
