@@ -145,12 +145,12 @@ function moveDodger(e) {
    * we've declared for you above.)
    * And be sure to use the functions declared below!
    */
-   console.log(e.key)
-   document.addEventListener('keydown', function(e) {
-     if (e.which === LEFT_ARROW) {
+   console.log(e.which)
+
+     if (e.key === LEFT_ARROW) {
        moveDodgerLeft()
      }
-   })
+
 
    document.addEventListener('keydown', function(e) {
      if (e.which === RIGHT_ARROW) {
