@@ -133,6 +133,8 @@ GAME.appendChild(rock);
  */
 function endGame() {
 
+  clearInterval(gameInterval)
+
   alert("YOU LOSE";)
 }
 
@@ -150,9 +152,16 @@ function moveDodger(e) {
 function moveDodgerLeft() {
   // implement me!
   /**
+
    * This function should move DODGER to the left
    * (mabye 4 pixels?). Use window.requestAnimationFrame()!
    */
+  var leftNumbers = dodger.style.left.replace('px', '')
+  var left = parseInt(leftNumbers, 10)
+
+  if (left > 0) {
+    dodger.style.left = `${left - 1}px`
+  }
 }
 
 function moveDodgerRight() {
