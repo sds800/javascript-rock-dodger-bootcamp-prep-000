@@ -166,12 +166,12 @@ function moveDodgerLeft() {
    */
   var leftNumbers = dodger.style.left.replace('px', '')
   var left = parseInt(leftNumbers, 10)
-window.requestAnimationFrame(moveDodgerLeft)
-  if (left > 4) {
 
+  if (left > 0) {
+    window.requestAnimationFrame(moveDodgerLeft)
     dodger.style.left = `${left - 4}px`
   }
-  // window.requestAnimationFrame(moveDodgerLeft)
+  window.requestAnimationFrame(moveDodgerLeft)
 }
 // window.requestAnimationFrame(moveDodgerLeft)
 // document.addEventListener('keydown', function(e) {
@@ -190,6 +190,7 @@ function moveDodgerRight() {
    var left = parseInt(leftNumbers, 10)
 
    if (left < 359) {
+     window.requestAnimationFrame(moveDodgerRight)
      dodger.style.left = `${left + 4}px`
    }
    window.requestAnimationFrame(moveDodgerRight)
