@@ -83,9 +83,7 @@ GAME.appendChild(rock);
   var top = 0
   function step() {
 rock.style.top = `${top += 2}px`
-if (top < 400) {
-  window.requestAnimationFrame(step)
-}
+
 }
     //  * If a rock collides with the DODGER,
     //  * we should call endGame()
@@ -95,7 +93,10 @@ if (top < 400) {
      }
     //  * Otherwise, if the rock hasn't reached the bottom of
     //  * the GAME, we want to move it again.
-     if (top >= 400){
+    if (top < 400) {
+      window.requestAnimationFrame(step)
+    }
+     if (top > 400){
        rock.remove()
      }
     /**
