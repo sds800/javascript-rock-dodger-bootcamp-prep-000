@@ -81,9 +81,9 @@ GAME.appendChild(rock);
   function moveRock() {
 
   var top = 0
-  
+
   function step() {
-    
+
     rock.style.top = `${top += 2}px`
 
 }
@@ -96,7 +96,7 @@ GAME.appendChild(rock);
     //  * Otherwise, if the rock hasn't reached the bottom of
     //  * the GAME, we want to move it again.
     if (top < 400) {
-    moveRock()
+    step()
     }
      if (top > 400){
        GAME.removeChild(rock)
@@ -108,7 +108,7 @@ GAME.appendChild(rock);
   // We should kick of the animation of the rock around here
   moveRock(rock)
 
-  
+
 
 
   // Add the rock to ROCKS so that we can remove all rocks
