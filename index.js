@@ -78,7 +78,7 @@ GAME.appendChild(rock);
    * This function moves the rock. (2 pixels at a time
    * seems like a good pace.)
    */
-  function moveRock(rock) {
+  function moveRock() {
 
   var top = 0
   function step() {
