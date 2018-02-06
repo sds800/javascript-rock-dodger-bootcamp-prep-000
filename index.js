@@ -114,7 +114,7 @@ window.requestAnimationFrame(step)
 
   // Finally, return the rock element you've created
   return rock
-ç}
+}
 
 /**
  * End the game by clearing `gameInterval`,
