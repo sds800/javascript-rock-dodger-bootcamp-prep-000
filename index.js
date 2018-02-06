@@ -104,9 +104,10 @@ rock.style.top = `${top += 2}px`
      * we should remove the rock from the DOM
      */
   // We should kick of the animation of the rock around here
-  moveRock(rock){
-    window.requestAnimationFrame(step)
-  }
+  moveRock(rock)
+
+  
+
 
   // Add the rock to ROCKS so that we can remove all rocks
   // when there's a collision
