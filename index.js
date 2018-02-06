@@ -97,7 +97,7 @@ GAME.appendChild(rock);
    else {
       GAME.removeChild(rock);
    }
-     
+
 
     /**
      * But if the rock *has* reached the bottom of the GAME,
@@ -127,7 +127,7 @@ function endGame() {
 
   clearInterval(gameInterval)
 
-  GAME.removeChild(ROCKS)
+  GAME.removeChild(rock)
 
   alert("YOU LOSE!")
 }
