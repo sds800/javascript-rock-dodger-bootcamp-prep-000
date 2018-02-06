@@ -107,15 +107,14 @@ GAME.appendChild(rock);
   function move(rock) {
     var top = 0
 
-    function step() {
       rock.style.top = `${top += 2}px`
 
       if (top < 400) {
-        window.requestAnimationFrame(step)
+        window.requestAnimationFrame(move)
       }
-    }
+    
 
-    window.requestAnimationFrame(step)
+    window.requestAnimationFrame(move)
   }
   // Add the rock to ROCKS so that we can remove all rocks
   // when there's a collision
