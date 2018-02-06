@@ -168,7 +168,7 @@ function moveDodgerLeft() {
   var left = parseInt(leftNumbers, 10)
 
   if (left > 0) {
-    window.requestAnimationFrame(moveDodgerLeft)
+    // window.requestAnimationFrame(moveDodgerLeft)
     dodger.style.left = `${left - 4}px`
   }
   // window.requestAnimationFrame(moveDodgerLeft)
@@ -190,7 +190,7 @@ function moveDodgerRight() {
    var left = parseInt(leftNumbers, 10)
 
    if (left < 359) {
-     window.requestAnimationFrame(moveDodgerRight)
+    //  window.requestAnimationFrame(moveDodgerRight)
      dodger.style.left = `${left + 4}px`
    }
   //  window.requestAnimationFrame(moveDodgerRight)
