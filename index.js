@@ -100,7 +100,7 @@ GAME.appendChild(rock);
    }
 
      if (top > 400){
-       GAME.removeChild(rock)
+       GAME.removeChild(rock);
      }
     /**
      * But if the rock *has* reached the bottom of the GAME,
