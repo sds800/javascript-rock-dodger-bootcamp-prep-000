@@ -86,7 +86,7 @@ GAME.appendChild(rock);
      * we should call endGame()
      */
      if (checkCollision = true) {
-       endGame()
+        return endGame()
      }
      if(checkCollision = false){
 
@@ -132,6 +132,7 @@ GAME.appendChild(rock);
  * Finally, alert "YOU LOSE!" to the player.
  */
 function endGame() {
+  alert("YOU LOSE";)
 }
 
 function moveDodger(e) {
