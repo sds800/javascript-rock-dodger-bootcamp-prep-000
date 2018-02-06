@@ -40,10 +40,10 @@ function checkCollision(rock) {
     const rockRightEdge = rockLeftEdge + 20
 
     if ((rockLeftEdge < dodgerLeftEdge && rockRightEdge > dodgerLeftEdge) ||
-      (rockLeftEdge > dodgerRightEdge && rockRightEdge < dodgerRightEdge) ||
+      (rockLeftEdge >= dodgerRightEdge && rockRightEdge <= dodgerRightEdge) ||
       (rockLeftEdge < dodgerRightEdge && rockRightEdge > dodgerRightEdge)){
         return true
-       }        // return true
+       }
     }
 }
       // false /**
