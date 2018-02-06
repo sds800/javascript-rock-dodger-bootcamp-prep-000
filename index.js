@@ -79,6 +79,14 @@ GAME.appendChild(rock);
    * seems like a good pace.)
    */
   function moveRock() {
+
+  var top = 0
+  function step() {
+rock.style.top = `${top += 2}px`
+if (top < 400) {
+  window.requestAnimationFrame(step)
+}
+}
     //  * If a rock collides with the DODGER,
     //  * we should call endGame()
     //  */
