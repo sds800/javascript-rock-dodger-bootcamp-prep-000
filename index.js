@@ -18,7 +18,7 @@ var gameInterval = null
  */
 
 
-function checkCollision(rock) {
+function checkCollision() {
   // implement me!
   // use the comments below to guide you!
   const top = positionToInteger(rock.style.top)
