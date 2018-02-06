@@ -38,9 +38,9 @@ function checkCollision(rock) {
     // FIXME: The rock is 20 pixel's wide -- how do we get the right edge?
     const rockRightEdge = rockLeftEdge + 20
 
-    if ((rockLeftEdge < dodgerLeftEdge && rockRightEdge > dodgerLeftEdge) ||
-      (rockLeftEdge > dodgerRightEdge && rockRightEdge < dodgerRightEdge) ||
-      (rockLeftEdge < dodgerRightEdge && rockRightEdge > dodgerRightEdge)
+    if ((rockLeftEdge <= dodgerLeftEdge && rockRightEdge >= dodgerLeftEdge) ||
+      (rockLeftEdge >= dodgerRightEdge && rockRightEdge <= dodgerRightEdge) ||
+      (rockLeftEdge <= dodgerRightEdge && rockRightEdge >= dodgerRightEdge)
       // false /**
       //          * Think about it -- what's happening here?
       //          * There's been a collision if one of three things is true:
@@ -112,7 +112,7 @@ window.requestAnimationFrame(step)
 
   // Finally, return the rock element you've created
   return rock
-}
+ç}
 
 /**
  * End the game by clearing `gameInterval`,
