@@ -88,8 +88,8 @@ GAME.appendChild(rock);
      if (checkCollision = true) {
         endGame()
      }
-     if(checkCollision = false){
-
+     else {
+       move(rock)
      }
     /**
      * Otherwise, if the rock hasn't reached the bottom of
@@ -104,13 +104,13 @@ GAME.appendChild(rock);
   }
 
   // We should kick of the animation of the rock around here
-  function move(el) {
+  function move(rock) {
     var top = 0
 
     function step() {
-      el.style.top = `${top += 2}px`
+      rock.style.top = `${top += 2}px`
 
-      if (top < 200) {
+      if (top < 400) {
         window.requestAnimationFrame(step)
       }
     }
