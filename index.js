@@ -94,7 +94,7 @@ rock.style.top = `${top += 2}px`
     //  * Otherwise, if the rock hasn't reached the bottom of
     //  * the GAME, we want to move it again.
     if (top < 400) {
-      window.requestAnimationFrame(step)
+      step()
     }
      if (top > 400){
        rock.remove()
