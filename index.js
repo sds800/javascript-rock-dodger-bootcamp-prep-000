@@ -171,7 +171,7 @@ function moveDodgerLeft() {
     dodger.style.left = `${left - 4}px`
   }
 }
-window.requestAnimationFrame(moveDodgerLeft)
+// window.requestAnimationFrame(moveDodgerLeft)
 // document.addEventListener('keydown', function(e) {
 //   if (e.which === LEFT_ARROW) {
 //     moveDodgerLeft()
