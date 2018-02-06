@@ -76,7 +76,7 @@ GAME.appendChild(rock);
    * This function moves the rock. (2 pixels at a time
    * seems like a good pace.)
    */
-  function moveRock(rock) {
+  function moveRock() {
     //  * If a rock collides with the DODGER,
     //  * we should call endGame()
     //  */
@@ -93,7 +93,7 @@ GAME.appendChild(rock);
      * we should remove the rock from the DOM
      */
   // We should kick of the animation of the rock around here
-
+function move(rock) {
     var top = 0
 
     function step() {
@@ -105,6 +105,7 @@ GAME.appendChild(rock);
 }
 
 window.requestAnimationFrame(step)
+}
   // Add the rock to ROCKS so that we can remove all rocks
   // when there's a collision
   ROCKS.push(rock)
