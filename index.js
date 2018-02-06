@@ -168,8 +168,10 @@ function moveDodgerLeft() {
   var left = parseInt(leftNumbers, 10)
 
   if (left > 0) {
+
     dodger.style.left = `${left - 4}px`
   }
+  window.requestAnimationFrame(moveDodgerLeft)
 }
 // window.requestAnimationFrame(moveDodgerLeft)
 // document.addEventListener('keydown', function(e) {
