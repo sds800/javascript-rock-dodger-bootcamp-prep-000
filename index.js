@@ -171,7 +171,7 @@ function moveDodgerLeft() {
     window.requestAnimationFrame(moveDodgerLeft)
     dodger.style.left = `${left - 4}px`
   }
-  window.requestAnimationFrame(moveDodgerLeft)
+  // window.requestAnimationFrame(moveDodgerLeft)
 }
 // window.requestAnimationFrame(moveDodgerLeft)
 // document.addEventListener('keydown', function(e) {
@@ -193,7 +193,7 @@ function moveDodgerRight() {
      window.requestAnimationFrame(moveDodgerRight)
      dodger.style.left = `${left + 4}px`
    }
-   window.requestAnimationFrame(moveDodgerRight)
+  //  window.requestAnimationFrame(moveDodgerRight)
  }
 
  // document.addEventListener('keydown', function(e) {
