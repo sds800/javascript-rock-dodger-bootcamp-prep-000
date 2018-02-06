@@ -132,7 +132,7 @@ function endGame() {
 
   clearInterval(gameInterval)
 
-  alert("YOU LOSE";)
+  alert("YOU LOSE")
 }
 
 function moveDodger(e) {
