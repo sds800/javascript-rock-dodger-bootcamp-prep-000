@@ -73,7 +73,7 @@ function createRock(x) {
    * it to GAME and move it downwards.
    */
 GAME.appendChild(rock);
-}
+
   /**
    * This function moves the rock. (2 pixels at a time
    * seems like a good pace.)
@@ -112,7 +112,7 @@ window.requestAnimationFrame(step)
   // Finally, return the rock element you've created
   return rock
 }
-
+}
 /**
  * End the game by clearing `gameInterval`,
  * removing all ROCKS from the DOM,
