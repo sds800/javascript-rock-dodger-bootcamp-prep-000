@@ -79,7 +79,7 @@ GAME.appendChild(rock);
    * seems like a good pace.)
    */
   function moveRock() {
-    var rock = document.querySelector("#rock")
+
   var top = 0
 
   function step() {
@@ -95,7 +95,7 @@ GAME.appendChild(rock);
      }
     //  * Otherwise, if the rock hasn't reached the bottom of
     //  * the GAME, we want to move it again.
-    if (top < 200) {
+    if (top < 400) {
      window.requestAnimationFrame(step)
    }
 
